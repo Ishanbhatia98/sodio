@@ -51,12 +51,12 @@ You will receive a response containing the original URL, the short key, and the 
 
 ### Accessing a Short URL
 
-Simply navigate to the short URL provided by the service. If the URL is password-protected, append the password as a query parameter.
+Simply navigate to the short URL provided by the service. If the URL is password-protected, append the password using `||` separator.
 
-```
-base_url/shorten/short_key?password
-```
+`base_url/surl/short_key||password`
+
 When its password protected, it will redirect to the original url.
+
 
 ### Viewing Analytics
 

@@ -55,7 +55,7 @@ class ShortUrl(BaseSQL, GetOr404Mixin, UniqueSlugMixin):
     
     @classmethod
     def validate_redirect(cls, url:str, ip_address:str):
-        url = url.split("?")
+        url = url.split("||")
         password = None
         if len(url) == 2:
             password = url[1]
