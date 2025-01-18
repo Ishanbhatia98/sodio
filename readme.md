@@ -53,7 +53,7 @@ You will receive a response containing the original URL, the short key, and the 
 
 Simply navigate to the short URL provided by the service. If the URL is password-protected, append the password using `||` separator.
 
-`base_url/surl/short_key||password`
+`base_url/surl/shorten/short_key||password`
 
 When its password protected, it will redirect to the original url.
 
