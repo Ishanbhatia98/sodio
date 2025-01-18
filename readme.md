@@ -47,14 +47,14 @@ Send a POST request to `/surl/shorten` with the following JSON payload:
 }
 ```
 
-You will receive a response containing the original URL, the short URL, and the expiry time.
+You will receive a response containing the original URL, the short key, and the expiry time.
 
 ### Accessing a Short URL
 
 Simply navigate to the short URL provided by the service. If the URL is password-protected, append the password as a query parameter.
 
 ```
-short_url?password
+base_url/shorten/short_key?password
 ```
 When its password protected, it will redirect to the original url.
 
